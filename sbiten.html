@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Starter</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- header -->
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/BeLogo.svg" alt="Belarusian Cuisin Recipes" />   
+          </a>
+          <button type="button" class="btn nav-btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <div class="nav-links show-links">
+          <a href="index.html" class="nav-link">Галоўная</a>
+          <a href="about.html" class="nav-link">Пра праэкт</a>
+          <a href="tags.html" class="nav-link">Катэгорыі</a>
+          <a href="recipes.html" class="nav-link">Рэцэпты</a>
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn">Кантакты</a>
+          </div>
+        </div>
+        <img src="assets/recipes/moon.png" id="icon">
+      </div>
+   </nav>
+   <!-- end of nav -->
+   <!-- main -->
+   <main class="page">
+     <div class="recipe-page">
+       <section class="recipe-hero">
+          <img 
+          src="./assets/recipes/sbiten.jpg" 
+          class="img recipe-hero-img"
+          alt="pancakes"
+          />
+          <article>
+            <h2>Збіцень</h2>
+            <p>
+                Знакаміты беларускі напой можа быць як ахаладжальным, так і гарачым. Першы рыхтавалі для здаволення смагі гарачым летам і пасля лазні, а другі - каб сагрэцца зімой, а таксама пазбавіцца ад прастуды. У абодвух выпадках у яго склад уваходзілі мёд, вада, пякучы перац, гваздзік, лаўровы ліст і мушкатовы арэх.
+            </p>
+            <!-- recipe icons -->
+            <div class="recipe-icons">
+              <!-- single recipe icon -->
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>Гатоўка</h5>
+                <p>30 хвілін</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Колькасць</h5>
+                <p>2-3 чалавекі</p>
+              </article>
+            </div>
+            <!-- recipe tags -->
+            <div class="recipe-tags">
+              Tags : <a href="miasnya.html">мясныя</a>
+              <a href="tag-supy.html">супы</a>
+              <a href="napitki.html">напіткі</a>
+              <a href="recipes.html">рэцэпты</a>
+            </div>
+          </article>
+       </section>
+       <!-- recipe content -->
+       <section class="recipe-content">
+          <article class="second-column">
+            <div>
+              <h4>Інгрэдыенты</h4>
+              <p class="single-ingredient">
+                0,5 літра вады
+              </p>
+              <p class="single-ingredient">
+                150 г мёда
+              </p>
+              <p class="single-ingredient">
+                150 г цукру
+              </p>
+              <p class="single-ingredient">
+                1 ч. л. карыцы
+              </p>
+              <p class="single-ingredient">
+                1 ч. л. каляндры
+              </p>
+              <p class="single-ingredient">
+                10 штук гваздзіка ці 1 ч. л. молатай)
+              </p>
+              <p class="single-ingredient">
+                1 ч. л. імбіра
+              </p>
+              <p class="single-ingredient">
+                3 лаўровых ліста
+              </p>
+            </div>
+            <article>
+              <h4>Гатоўка</h4>
+              <!-- single instruction -->
+              <div class="single-instruction">
+                <header>
+                  <p>Шаг 1</p>
+                  <div></div>
+                </header>
+                <p>
+                    Закіпяціць ваду, дадаць мёд, цукар і ўсе заправы. Кіпяціць каля 20 хвілін.
+                </p>
+                <!-- single instruction -->
+              <div class="single-instruction">
+                <header>
+                  <p>Шаг 2</p>
+                  <div></div>
+                </header>
+                <p>
+                    Па меры кіпення будзе з'яўляцца плеўка, яе трэба збіраць.
+                </p>
+                <!-- single instruction -->
+              <div class="single-instruction">
+                <header>
+                  <p>Шаг 3</p>
+                  <div></div>
+                </header>
+                <p>
+                    Піць гарачым або халодным - на Ваша меркаванне.
+                </p>
+              </div>
+            </article>
+          </article>
+       </section>
+     </div>
+   </main>
+   <!-- end of main -->
+   <!-- footer -->
+   <footer class="page-footer">
+     <p>
+        &copy; <span id="date"></span>
+        <span class=""footer-logo> BelarusianCuisineRecipes </span>
+        Built by <a href="AlexKhats">Alex Khats</a>
+      </p>
+   </footer>
+   <script src="./js/app.js"></script>
+   <script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+        icon.src = "assets/recipes/sun.png";
+      }else{
+        icon.src = "assets/recipes/moon.png";
+      }
+    }
+  </script>
+  </body>
+</html>
